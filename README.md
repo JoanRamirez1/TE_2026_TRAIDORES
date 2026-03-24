@@ -9,3 +9,6 @@
 - CARLOS ALBERTO MARTINEZ BAUTISTA **(Equipo de desarrollo)** <br>
   carlosmartinez127@aragon.unam.mx
 - ANGEL GABRIEL ALAMILLA CORDOVA **(Equipo de desarrollo)** <br>
+  gabrielcordova48@aragon.unam.mx
+- LEONARDO CORTES ARRIAGA **(Equipo de desarrollo)** <br>
+  leonardocortes59@aragon.unam.mx
