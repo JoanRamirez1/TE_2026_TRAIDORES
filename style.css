@@ -72,8 +72,30 @@ p {
     font-weight: 300;
     max-width: 600px;
     margin: 0 auto;
+    text-align: justify;
 }
 
+/* Resalta la pestaña actual y el hover en el menú */
+.nav_menu li a:hover,
+.nav_menu li a.active {
+    color: var(--accent-blue);
+}
+
+/* Contenedor extra para agrupar h1 y p si decides agregar más cosas */
+.texto-central {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+/* Usando el color azul de tus variables para resaltar partes del título */
+.resaltado {
+    color: var(--accent-blue);
+}
+
+.parrafos{
+    color: var(--text-white);
+}
 
 .nav_menu li a.active { color: var(--accent-blue); }
 
