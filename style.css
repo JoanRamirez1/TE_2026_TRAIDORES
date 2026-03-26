@@ -1,0 +1,82 @@
+:root {
+    --bg-color: #050a12;
+    --text-white: #ffffff;
+    --accent-blue: #5ba4e5;
+    --nav-text: #8a99a8;
+    --font-main: 'Inter', sans-serif;
+    --font-title: 'Playfair Display', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-white);
+    font-family: var(--font-main);
+    overflow-x: hidden;
+}
+
+
+.nav_bar {
+    padding: 20px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+
+
+.nav_menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav_menu li a {
+    text-decoration: none;
+    color: var(--nav-text);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+}
+
+.contenido {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+
+
+h1 {
+    font-family: var(--font-title);
+    font-size: 80px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+
+
+p {
+    color: var(--nav-text);
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto;
+}
