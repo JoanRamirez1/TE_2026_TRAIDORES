@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrum — Ingeniería de Software</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ── Extras exclusivos de la página Scrum ──────────── */
+
+        .scrum_grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+        }
+
+        @media (max-width: 700px) {
+            .scrum_grid { grid-template-columns: 1fr; }
+        }
+
+        /* Card A — borde azul izquierdo (usa variables del site) */
+        .card_a {
+            background: rgba(91, 164, 229, 0.05);
+            border: 1px solid rgba(91, 164, 229, 0.2);
+            border-left: 3px solid var(--accent-blue);
+            border-radius: 8px;
+            padding: 1.8rem 1.8rem 1.6rem;
+        }
+
+        /* Card B — borde sutil + línea decorativa superior */
+        .card_b {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 1.8rem 1.8rem 1.6rem;
+            position: relative;
+        }
+
+        .card_b::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 1.8rem; right: 1.8rem;
+            height: 2px;
+            background: linear-gradient(90deg, var(--accent-blue), transparent);
+            border-radius: 2px;
+        }
+
+        /* Icono + título de cada card */
+        .card_header {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            margin-bottom: 1rem;
+        }
+
+        .card_icon_box {
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+            background: rgba(91, 164, 229, 0.12);
+            border: 1px solid rgba(91, 164, 229, 0.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            flex-shrink: 0;
+        }
+
+        .card_a .card_titulo,
+        .card_b .card_titulo {
+            font-size: 13px;
+            letter-spacing: 0.04em;
+            margin-bottom: 0;
+        }
+
+        /* Tags pill */
+        .tag_row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+            margin-top: 1.1rem;
+        }
+
+        .tag {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 0.25rem 0.7rem;
+            border-radius: 999px;
+            background: rgba(91, 164, 229, 0.08);
+            border: 1px solid rgba(91, 164, 229, 0.2);
+            color: var(--accent-blue);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="nav_bar">
+        <div class="logo">Equipo TEC — Proyecto Web</div>
+        <nav>
+            <ul class="nav_menu">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="ingenieriaSoftwre.html">INGENIERÍA DE SOFTWARE</a></li>
+                <li><a href="patronesDiseño.html">PATRONES DE DISEÑO</a></li>
+                <li><a href="scrum.html" class="active">SCRUM</a></li>
+                <li><a href="perfilDesarrollador.html">INTEGRANTES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contenido">
+        <div>
+            <p class="page_label">Apartado 3</p>
+            <h1>Scrum</h1>
+            <p>Marco ágil para la entrega iterativa e incremental de software de calidad.</p>
+        </div>
+    </section>
+
+    <main class="page_content">
+
+        <section class="seccion">
+            <h2 class="seccion_titulo">¿Qué es Scrum?</h2>
+
+            <div class="scrum_grid">
+
+                <!-- ── Caja A: Definición ─────────────────── -->
+                <div class="card_a">
+                    <div class="card_header">
+                        <div class="card_icon_box">⚙️</div>
+                        <p class="card_titulo">Marco de Trabajo Ágil</p>
+                    </div>
+                    <p>
+                        <strong>Scrum</strong> es un marco de trabajo ágil diseñado para gestionar y
+                        desarrollar proyectos complejos, especialmente en el desarrollo de software.
+                        Se basa en ciclos de trabajo cortos llamados <strong>sprints</strong>
+                        —generalmente de 1 a 4 semanas—, al final de los cuales se entrega una
+                        versión funcional e incremental del producto. Su estructura define tres roles
+                        principales: el <strong>Product Owner</strong>, que prioriza el trabajo;
+                        el <strong>Scrum Master</strong>, que facilita el proceso; y el
+                        <strong>equipo de desarrollo</strong>, que ejecuta las tareas.
+                    </p>
+                    <div class="tag_row">
+                        <span class="tag">Sprints</span>
+                        <span class="tag">Product Owner</span>
+                        <span class="tag">Scrum Master</span>
+                        <span class="tag">Incremental</span>
+                    </div>
+                </div>
+
+                <!-- ── Caja B: Principios ─────────────────── -->
+                <div class="card_b">
+                    <div class="card_header">
+                        <div class="card_icon_box">🔄</div>
+                        <p class="card_titulo">Transparencia y Adaptación</p>
+                    </div>
+                    <p>
+                        Lo que distingue a Scrum es su enfoque en la <strong>transparencia</strong>,
+                        la inspección continua y la adaptación. A través de reuniones cortas y
+                        periódicas como el <strong>Daily Scrum</strong>, la revisión del sprint y
+                        la retrospectiva, el equipo puede detectar problemas rápidamente y ajustar
+                        su rumbo. Esto lo convierte en una metodología ideal para entornos donde
+                        los requisitos cambian con frecuencia y se necesita entregar valor de forma
+                        constante.
+                    </p>
+                    <div class="tag_row">
+                        <span class="tag">Daily Scrum</span>
+                        <span class="tag">Retrospectiva</span>
+                        <span class="tag">Revisión</span>
+                        <span class="tag">Adaptación</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Proyecto Web — <span class="footer_acento">Ingeniería de Software</span> — Equipo TEC</p>
+    </footer>
+
+</body>
+</html>
