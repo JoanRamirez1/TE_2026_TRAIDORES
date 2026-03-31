@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patrones de diseño</title>
+    <title>Patrones de diseño - PROYECTO SCRUM</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -27,10 +27,66 @@
         <div class="texto-central">
             <h1>Patrones de <span class="resaltado">Diseño</span></h1>
             <p class="parrafos">
-                Un patron de diseño es una solución general y reutilizable a un problema común que ocurre en el diseño de software. 
+                Un patrón de diseño es una solución general y reutilizable a un problema común que ocurre en el diseño de software. 
                 No es código terminado, sino una plantilla conceptual que te guía para estructurar el código de manera eficiente, mantenible y escalable.
             </p>
         </div>
     </main>
+
+    <div class="page_content">
+        
+        <section class="seccion">
+            <h2 class="seccion_titulo">Categorías Principales</h2>
+            <div class="grid_cards">
+                <div class="card">
+                    <div class="card_titulo">Creacionales</div>
+                    <p>Se centran en los mecanismos de creación de objetos, tratando de crear objetos de una manera adecuada a la situación. Ayudan a que el sistema sea independiente de cómo se crean, componen y representan sus objetos.</p>
+                </div>
+                <div class="card">
+                    <div class="card_titulo">Estructurales</div>
+                    <p>Se refieren a cómo se combinan clases y objetos para formar estructuras más grandes. Se aseguran de que, si una parte del sistema cambia, no sea necesario cambiar todo el sistema.</p>
+                </div>
+                <div class="card">
+                    <div class="card_titulo">De Comportamiento</div>
+                    <p>Se encargan de la comunicación entre objetos, cómo interactúan y cómo se reparten las responsabilidades. Ayudan a definir el flujo de control en sistemas complejos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h2 class="seccion_titulo">Ejemplos Clásicos</h2>
+            <div class="timeline">
+                <div class="tl_item">
+                    <div class="tl_num">01</div>
+                    <div>
+                        <div class="card_titulo">Singleton (Creacional)</div>
+                        <p>Garantiza que una clase tenga una única instancia y proporciona un punto de acceso global a ella. Es muy utilizado para manejar conexiones a bases de datos o archivos de configuración.</p>
+                    </div>
+                </div>
+                <div class="tl_item">
+                    <div class="tl_num">02</div>
+                    <div>
+                        <div class="card_titulo">Observer (Comportamiento)</div>
+                        <p>Define una dependencia uno-a-muchos entre objetos, de forma que cuando un objeto cambia su estado, todos sus dependientes son notificados y actualizados automáticamente.</p>
+                    </div>
+                </div>
+                <div class="tl_item">
+                    <div class="tl_num">03</div>
+                    <div>
+                        <div class="card_titulo">MVC (Arquitectónico)</div>
+                        <p>Separa la lógica de negocio (Modelo), la interfaz de usuario (Vista) y la entrada del usuario (Controlador), permitiendo el desarrollo independiente y la reutilización de componentes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cita">
+                <strong>Nota:</strong> Estos patrones son fundamentales para cumplir con los estándares de <strong>Ingeniería de Software</strong> solicitados en el proyecto.
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>Equipo TEC — Proyecto Web <span class="footer_acento">|</span> 2026</p>
+    </footer>
 </body>
 </html>
