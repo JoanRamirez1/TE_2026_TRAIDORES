@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingeniería de Software</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="nav_bar">
+        <div class="logo">Equipo TEC — Proyecto Web</div>
+        <nav>
+            <ul class="nav_menu">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="ingenieriaSoftwre.html" class="active">INGENIERÍA DE SOFTWARE</a></li>
+                <li><a href="patronesDiseño.html">PATRONES DE DISEÑO</a></li>
+                <li><a href="scrum.html">SCRUM</a></li>
+                <li><a href="integrantes.html">INTEGRANTES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contenido">
+        <div>
+            <p class="page_label">Apartado 1</p>
+            <h1>Ingeniería de Software</h1>
+            <p>Fundamentos, principios y el ciclo de vida del desarrollo de software moderno.</p>
+        </div>
+    </section>
+
+    <main class="page_content">
+
+        <section class="seccion">
+            <h2 class="seccion_titulo">¿Qué es la Ingeniería de Software?</h2>
+            <div class="card">
+                <p>La <strong>ingeniería de software</strong> es una disciplina que aplica principios de ingeniería al diseño, desarrollo, prueba, mantenimiento y gestión de sistemas de software. A diferencia de la programación aislada, abarca todo el ciclo de vida del producto: desde la captura de requisitos hasta el retiro del sistema.</p>
+                <p>Fue reconocida formalmente como disciplina en la Conferencia de la OTAN de 1968, donde se identificó la llamada <em>"crisis del software"</em>: los proyectos se entregaban tarde, fuera de presupuesto y con defectos graves. Desde entonces, la disciplina ha evolucionado para ofrecer métodos sistemáticos que garanticen calidad y predictibilidad.</p>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h2 class="seccion_titulo">Principios Fundamentales</h2>
+            <div class="grid_cards">
+                <div class="card">
+                    <h3 class="card_titulo">Abstracción</h3>
+                    <p>Identificar los aspectos esenciales de un sistema ignorando los detalles irrelevantes para reducir la complejidad.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card_titulo">Modularidad</h3>
+                    <p>Dividir el software en componentes independientes con responsabilidades bien definidas, facilitando el mantenimiento.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card_titulo">Encapsulamiento</h3>
+                    <p>Ocultar los detalles internos de un módulo y exponer solo la interfaz necesaria para interactuar con él.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card_titulo">Reutilización</h3>
+                    <p>Crear componentes genéricos que puedan usarse en múltiples contextos, reduciendo costo y tiempo de desarrollo.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card_titulo">Rigor y Formalidad</h3>
+                    <p>Aplicar métodos precisos y verificables para garantizar que el software se comporta según lo especificado.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card_titulo">Verificación y Validación</h3>
+                    <p>Distinguir entre "¿construimos el producto correctamente?" y "¿construimos el producto correcto?"</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h2 class="seccion_titulo">Ciclo de Vida del Software (SDLC)</h2>
+            <div class="card" style="margin-bottom: 1rem;">
+                <p>El <strong>ciclo de vida del software</strong> es el conjunto de fases que atraviesa un sistema desde su concepción hasta su retiro. Define quién hace qué, cuándo y cómo a lo largo del proyecto.</p>
+            </div>
+            <div class="timeline">
+                <div class="tl_item">
+                    <span class="tl_num">01</span>
+                    <div>
+                        <h3 class="card_titulo">Planificación</h3>
+                        <p>Se define el alcance, se estiman recursos, tiempos y costos. Se evalúa la viabilidad técnica y económica del proyecto.</p>
+                    </div>
+                </div>
+                <div class="tl_item">
+                    <span class="tl_num">02</span>
+                    <div>
+                        <h3 class="card_titulo">Análisis de Requisitos</h3>
+                        <p>Se recaban y documentan las necesidades del cliente. Se distingue entre requisitos funcionales y no funcionales.</p>
+                    </div>
+                </div>
+                <div class="tl_item">
+                    <span class="tl_num">03</span>
+                    <div>
+                        <h3 class="card_titulo">Diseño</h3>
+                        <p>Se define la arquitectura del sistema: cómo se estructuran los módulos, qué tecnologías se usarán y cómo se almacenarán los datos.</p>
+                    </div>
+                </div>
+                <div class="tl_item">
+                    <span class="tl_num">04</span>
+                    <div>
+                        <h3 class="card_titulo">Implementación</h3>
+                        <p>Los desarrolladores escriben el código fuente siguiendo los estándares y el diseño acordado.</p>
+                    </div>
+                </div>
+                <div class="tl_item">
+                    <span class="tl_num">05</span>
+                    <div>
+                        <h3 class="card_titulo">Pruebas</h3>
+                        <p>Se verifica y valida el software mediante pruebas unitarias, de integración y de aceptación para detectar defectos antes de la entrega.</p>
+                    </div>
+                </div>
+                <div class="tl_item">
+                    <span class="tl_num">06</span>
+                    <div>
+                        <h3 class="card_titulo">Despliegue y Mantenimiento</h3>
+                        <p>El software se instala en producción. El mantenimiento cubre corrección de errores, mejoras y adaptación a nuevos requisitos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h2 class="seccion_titulo">Modelos de Proceso</h2>
+            <div class="grid_cards">
+                <div class="card">
+                    <h3 class="card_titulo">Cascada</h3>
+                    <p>Fases secuenciales y lineales. Simple de gestionar, pero rígido ante cambios de requisitos tardíos.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card_titulo">Espiral</h3>
+                    <p>Combina cascada con prototipado iterativo, añadiendo análisis de riesgos en cada ciclo.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card_titulo">Ágil</h3>
+                    <p>Entregas incrementales en sprints cortos. Alta adaptabilidad y colaboración continua con el cliente.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card_titulo">Incremental</h3>
+                    <p>Se construye el sistema por partes funcionales que se integran progresivamente hasta completar el producto.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Proyecto Web — <span class="footer_acento">Ingeniería de Software</span> — Equipo TEC</p>
+    </footer>
+
+</body>
+</html>
