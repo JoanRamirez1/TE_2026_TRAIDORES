@@ -6,14 +6,14 @@
     <title>PROYECTO SCRUM</title>
     <link rel="stylesheet" href="style.css">
 </head> 
-    <body> 
+<body> 
     <header class="nav_bar"> 
         <div class="logo">
              Equipo TEC — Proyecto Web
         </div>
         <nav>
             <ul class="nav_menu">
-                <li><a href="index.html">INICIO</a></li>
+                <li><a href="index.html" class="active">INICIO</a></li>
                 <li><a href="ingenieriaSoftwre.html">INGENIERÍA DE SOFTWARE</a></li>
                 <li><a href="patronesDiseño.html">PATRONES DE DISEÑO</a></li>
                 <li><a href="scrum.html">SCRUM</a></li>
@@ -22,14 +22,38 @@
         </nav>
     </header>
 
-    <main class="contenido">
-        <div class="glow-effect"></div>
-        <div >
-            <h1>INICIO</h1>
-            <p>Bienvenidos a nuestro proyecto</p>
-        </div>
+    <main class="page_content">
+        <section class="contenido" style="height: auto; margin-bottom: 4rem;">
+            <div class="texto-central">
+                <p class="page_label">INICIO</p>
+                <h1>PROYECTO WEB</h1>
+                <p style="text-align: center; margin: 0 auto;">Esta plataforma ha sido diseñada para explorar los pilares fundamentales del desarrollo de sistemas modernos, desde la teoría de la ingeniería hasta las metodologías ágiles más utilizadas en la industria actual.</p>
+            </div>
+        </section>
+
+        <section class="grid_cards">
+            <div class="card">
+                <h3 class="card_titulo">Ingeniería de Software</h3>
+                <p>Explora la disciplina que aplica enfoques sistemáticos y cuantificables al desarrollo, operación y mantenimiento del software de calidad.</p>
+            </div>
+            <div class="card">
+                <h3 class="card_titulo">Patrones de Diseño</h3>
+                <p>Soluciones probadas para problemas comunes en el diseño de software. Aprende cómo estructurar código de manera eficiente y escalable.</p>
+            </div>
+            <div class="card">
+                <h3 class="card_titulo">Scrum</h3>
+                <p>Sumérgete en el marco de trabajo ágil más popular. Roles, eventos y artefactos diseñados para entregar valor de forma iterativa.</p>
+            </div>
+            <div class="card">
+                <h3 class="card_titulo">Integrantes</h3>
+                <p>Conoce al equipo detrás de este proyecto: desarrolladores encargados de la investigación, diseño y arquitectura de esta plataforma.</p>
+            </div>
+        </section>
     </main>
 
-    </body> 
+    <footer class="footer">
+        <p>Proyecto Web — <span class="footer_acento">Inicio</span> — Equipo TEC</p>
+    </footer>
 
+</body> 
 </html>
